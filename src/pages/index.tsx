@@ -1,3 +1,4 @@
+import { Heading } from '@chakra-ui/layout';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -10,7 +11,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1> My app</h1>
+      <Heading variant="primary" size="lg">
+        My little test
+      </Heading>
     </div>
   );
 };
