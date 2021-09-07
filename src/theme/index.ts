@@ -1,6 +1,8 @@
 import { extendTheme } from '@chakra-ui/react';
 
-import { HeadingStyle } from './components/Heading';
+import { ButtonStyle as Button } from './components/Button';
+import { HeadingStyle as Heading } from './components/Heading';
+import { TextStyle as Text } from './components/Text';
 import { globalStyles } from './styles';
 
 export const COLORS = {
@@ -20,7 +22,9 @@ const overrides = {
   fonts: FONTS,
   ...globalStyles,
   components: {
-    Heading: HeadingStyle,
+    Heading,
+    Text,
+    Button,
   },
 };
 
